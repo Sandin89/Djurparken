@@ -23,12 +23,13 @@ body {
 } */
 
 .section {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100px;
     padding: 20px;
     text-align: center;
     width: 100%;
     height: 100vh;
+    padding-top: 3%;
 }
 
 .navbar {
@@ -39,8 +40,8 @@ body {
     text-align: center;
     display: block;
     position: sticky;
-    top: 20;
-    left: 20;
+    top: 0;
+    /* left: 20; */
     width: 100%;
 }
 
@@ -59,7 +60,7 @@ body {
 }
 
 .site-footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -69,10 +70,39 @@ body {
     text-align: center;
 }
 
-.center-text {
+/* .center-text {
   text-align: center;
+} */
+
+#animals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* .animals-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+#animals img {
+  height: 350px;
+  margin: 0 20px;
+}
+
+.intro {
+  
 }
 
 .ikoner {
     
+}
+
+#table1 {
+  display: block;
+  vertical-align: top;
 }
