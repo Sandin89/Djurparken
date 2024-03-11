@@ -20,7 +20,9 @@
   </head>
 
   <!-- <body style="background-image: url('images/hero_image.png')"> -->
+
   <body>
+    <div class="content-container">
     <button id="header-button">
       <a href="#home">Systementors Djurpark</a>
     </button>
@@ -32,7 +34,6 @@
         <a href="#to_do">Things to do</a>
         <a href="#animalinfo">Animal info</a>
         <a href="#contactform">Contact form</a>
-        <a href="#about_us">About us</a>
       </ul>
     </nav>
 
@@ -126,53 +127,70 @@
       <!-- ----------------------------- TABLE BÖRJAR ---------------------------------- -->
       <section class="section" id="animalinfo">
         <h1>Informationstabell över "alla" våra djur</h1>
-        <table border="1" id="table">
-          <caption>
-            Information kring våra djur
-          </caption>
-          <tr>
-            <th>Djur</th>
-            <td>Lion</td>
-            <td>Elephant</td>
-            <td>Turtle</td>
-            <td>Gorilla</td>
-          </tr>
-          <tr>
-            <th>Bild</th>
-            <td><img src="images/lion.jpg" alt="Lejon" /></td>
-            <td><img src="images/elephant.jpg" alt="Elefant" /></td>
-            <td><img src="images/turtle.jpg" alt="Sköldpadda" /></td>
-            <td><img src="images/gorilla.jpg" alt="Gorilla" /></td>
-          </tr>
-          <tr>
-            <th>Vikt</th>
-            <td>100kg</td>
-            <td>500kg</td>
-            <td>15kg</td>
-            <td>200kg</td>
-          </tr>
-          <tr>
-            <th>Link</th>
-            <td><a href="https://en.wikipedia.org/wiki/Lion">Lion</a></td>
-            <td>
-              <a href="https://en.wikipedia.org/wiki/Elephant">Elephant</a>
-            </td>
-            <td><a href="https://en.wikipedia.org/wiki/Turtle">Turtle</a></td>
-            <td><a href="https://en.wikipedia.org/wiki/Gorilla">Gorilla</a></td>
-          </tr>
-        </table>
+        <div class="table">
+          <table border="1">
+            <tr>
+              <th>Djur</th>
+              <td>Lion</td>
+              <td>Elephant</td>
+              <td>Turtle</td>
+              <td>Gorilla</td>
+            </tr>
+            <tr>
+              <th>Bild</th>
+              <td><img src="images/lion.jpg" alt="Lejon" /></td>
+              <td><img src="images/elephant.jpg" alt="Elefant" /></td>
+              <td><img src="images/turtle.jpg" alt="Sköldpadda" /></td>
+              <td><img src="images/gorilla.jpg" alt="Gorilla" /></td>
+            </tr>
+            <tr>
+              <th>Vikt</th>
+              <td>100kg</td>
+              <td>500kg</td>
+              <td>15kg</td>
+              <td>200kg</td>
+            </tr>
+            <tr>
+              <th>Link</th>
+              <td><a href="https://en.wikipedia.org/wiki/Lion">Lion</a></td>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Elephant">Elephant</a>
+              </td>
+              <td><a href="https://en.wikipedia.org/wiki/Turtle">Turtle</a></td>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Gorilla">Gorilla</a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
 
       <!-- ----------------------------- TABLE SLUTAR ---------------------------------- -->
 
       <!-- ----------------------------- CONTACTFORM BÖRJAR ---------------------------------- -->
-      <section class="section" id="contactform"></section>
+
+      <section class="section" id="contactform">
+        <h1>Prenumerera på vårt nyhetsbrev!</h1>
+        <div class="form-container">
+          <form id="newsletterForm">
+            <label for="firstName">Förnamn:</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="Ditt förnamn" />
+
+            <label for="lastName">Efternamn:</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Ditt efternamn" />
+
+            <label for="email">Mejladress:</label>
+            <input type="email" id="email" name="email" required placeholder="din.email@example.com"/>
+
+            <label for="age">Ålder:</label>
+            <input type="number" id="age" name="age" required min="0" placeholder="Din ålder"/>
+
+            <button type="submit">Prenumerera</button>
+          </form>
+        </div>
+      </section>
 
       <!-- ----------------------------- CONTACTFORM SLUTAR ---------------------------------- -->
-
-      <!-- ----------------------------- ABOUT US BÖRJAR ---------------------------------- -->
-      <section class="section" id="about_us"></section>
-      <!-- ----------------------------- ABOUT US SLUTAR ---------------------------------- -->
     </main>
 
     <footer class="site-footer">
@@ -191,5 +209,7 @@
       ></iframe>
       <p>&copy; 2024 Systementors Djurpark</p>
     </footer>
+    <script src="JS/formHandler.js"></script>
+  </div>
   </body>
 </html>
