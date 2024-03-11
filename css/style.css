@@ -39,7 +39,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 20px;
-  padding-top: 5%; /* Justera detta värde efter behov */
+  padding-top: 5%; 
   margin: 20px 0;
   height: 100vh;
 }
@@ -68,7 +68,6 @@ body {
   text-align: center;
 }
 
-/* Centrerad text */
 .text-center {
   justify-content: center;
   text-align: center;
@@ -101,16 +100,7 @@ body {
   border-radius: 10px;
 }
 
-.site-footer {
-  /* position: fixed; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #515050;
-  height: 100px;
-  padding: 20px;
-  text-align: center;
-}
+
 
 /* .center-text {
   text-align: center;
@@ -183,3 +173,27 @@ body {
 }
 
 /* https://coolors.co/343330-45462a-7e5920-dc851f-ffa737 */
+
+
+
+/* --------------------------Footer och innehåll börjar-------------------------- */
+
+.site-footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #515050;
+  /* height: 100px; */
+  padding: 20px;
+  text-align: center;
+}
+
+/* element för kartan i footern */
+iframe {
+
+}
+
+
+
+/* --------------------------Footer och innehåll slutar-------------------------- */
